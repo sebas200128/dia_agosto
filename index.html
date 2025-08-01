@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Día de la Novia MI Amor</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="mainCard">
+      <div class="front">
+        <h1>Feliz Día de la Novia MI Amor</h1>
+        <div class="date-separator">
+          <div class="date">1 de Agosto</div>
+          <div class="separator">&lt;</div>
+        </div>
+        <div class="photo-frame">
+          <div class="circle-frame">
+            <img src="img.jpg" alt="Nuestra foto" class="centered-photo" />
+          </div>
+        </div>
+        <div class="message">
+          <span id="typewriter"></span>
+        </div>
+        <div class="divider"></div>
+        <button class="heart-btn pulse" id="openHeartBtn">
+          ¡Abre Mi Corazón!
+        </button>
+      </div>
+
+      <div class="back hidden fade-in" id="loveLetter">
+        <h1>Para Mi Amor</h1>
+        <div class="letter" style="overflow-y: auto; max-height: 450px; padding-right: 10px;">
+          <p>Mi pollita,</p>
+          <p>
+            Qué mejor manera de demostrarte mi amor haciendo lo que me gusta. Es el día de las novias y tú no serás una espectadora jeje.
+          </p>
+          <p>
+            La verdad no esperaba encontrar a alguien como tú, y mucho menos enamorarme tan rápido. Pero contigo todo fue distinto...
+            fue natural, sin presiones ni máscaras, como si el universo ya supiera que estábamos destinados a coincidir.
+          </p>
+          <p>
+            Desde la primera salida, tu mirada me hipnotizó, tu sonrisa me enamoró y tu forma de ser me envolvió sin que me diera cuenta.
+          </p>
+          <p>
+            Me sorprende lo fácil que fue conectar contigo, cómo cada conversación fluye, cómo cada silencio también se siente cómodo.
+          </p>
+          <p>
+            Hoy quiero agradecer por haberte encontrado. Te encontré y no pienso dejarte ir. Sé que lo nuestro es real y único. Te amo y te amaré en esta vida y en todas las demás.
+          </p>
+        </div>
+        <button class="back-btn" id="closeHeartBtn">Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <audio id="backgroundMusic" loop autoplay>
+    <source src="Iris.mp3" type="audio/mpeg" />
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <script src="audio-init.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
