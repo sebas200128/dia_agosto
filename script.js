@@ -41,3 +41,14 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+// Activación de música por botón
+document.getElementById('startMusicBtn').addEventListener('click', () => {
+  const audio = document.getElementById('backgroundMusic');
+  audio.volume = 0.7;
+  audio.play().then(() => {
+    document.getElementById('audioOverlay').style.display = 'none';
+  }).catch(err => {
+    alert("Toca de nuevo para activar el sonido ❤️");
+  });
+});
